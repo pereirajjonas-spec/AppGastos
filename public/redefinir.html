@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nova senha — Despesas de Viagem</title>
+  <meta name="theme-color" content="#5BA85F">
+  <link rel="icon" href="/img/icone-192.png">
+  <link rel="stylesheet" href="/css/fontes.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="acesso">
+    <div class="cartao">
+      <img class="logo" src="/img/logo.jpg" alt="Grupo MSA">
+      <form id="fSenha" novalidate hidden>
+        <h1 id="titulo">Criar nova senha</h1>
+        <p class="sub" id="quem"></p>
+        <div class="campo">
+          <label for="senha">Nova senha</label>
+          <input type="password" id="senha" autocomplete="new-password" required>
+          <div class="dica">Mínimo de 8 caracteres, com letras e números.</div>
+        </div>
+        <div class="campo">
+          <label for="senha2">Repita a nova senha</label>
+          <input type="password" id="senha2" autocomplete="new-password" required>
+        </div>
+        <button class="btn btn-primario btn-bloco" type="submit">Salvar senha</button>
+      </form>
+      <div class="msg" id="msg" hidden></div>
+      <p class="rodape"><a href="/">Ir para o login</a></p>
+    </div>
+  </div>
+  <script src="/js/comum.js"></script>
+  <script src="/js/redefinir.js"></script>
+</body>
+</html>

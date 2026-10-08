@@ -1,0 +1,7 @@
+/* Fontes hospedadas no próprio app (Manrope e Work Sans, licença OFL). Sem chamadas ao Google Fonts. */
+@font-face { font-family: 'Manrope'; font-weight: 700; font-style: normal; font-display: swap; src: url('/fonts/manrope-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Manrope'; font-weight: 800; font-style: normal; font-display: swap; src: url('/fonts/manrope-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-weight: 400; font-style: normal; font-display: swap; src: url('/fonts/work-sans-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-weight: 500; font-style: normal; font-display: swap; src: url('/fonts/work-sans-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-weight: 600; font-style: normal; font-display: swap; src: url('/fonts/work-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Work Sans'; font-weight: 700; font-style: normal; font-display: swap; src: url('/fonts/work-sans-latin-700-normal.woff2') format('woff2'); }

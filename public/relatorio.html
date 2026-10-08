@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatório de Viagem — Grupo MSA</title>
+  <link rel="icon" href="/img/icone-192.png">
+  <link rel="stylesheet" href="/css/fontes.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/relatorio.css">
+</head>
+<body class="pagina-relatorio">
+  <div class="barra-rel">
+    <a class="btn btn-sec btn-peq" id="voltar" href="/app">‹ Voltar</a>
+    <label class="chk"><input type="checkbox" id="chkDetalhe" checked> Incluir detalhamento</label>
+    <label class="chk"><input type="checkbox" id="chkAnexos" checked> Incluir fotos das notas</label>
+    <label class="chk" id="lblPorPagina">Comprovantes por página <select id="selPorPagina"><option value="1">1</option><option value="2">2</option><option value="4">4</option></select></label>
+    <span class="espaco"></span>
+    <button class="btn btn-sec" id="btnImprimir"></button>
+    <button class="btn btn-primario" id="btnPdf"></button>
+  </div>
+
+  <div id="folha" class="folha"><div class="vazio"><div class="girando" style="margin:0 auto"></div></div></div>
+
+  <script src="/vendor/html2pdf.bundle.min.js" defer></script>
+  <script src="/js/comum.js"></script>
+  <script src="/js/danfe.js"></script>
+  <script src="/js/relatorio.js"></script>
+</body>
+</html>

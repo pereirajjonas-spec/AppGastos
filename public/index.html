@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Despesas de Viagem — Grupo MSA</title>
+  <meta name="theme-color" content="#5BA85F">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/img/icone-192.png">
+  <link rel="apple-touch-icon" href="/img/icone-192.png">
+  <link rel="stylesheet" href="/css/fontes.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="acesso">
+    <div class="cartao">
+      <img class="logo" src="/img/logo.jpg" alt="Grupo MSA">
+
+      <!-- Login -->
+      <form id="fLogin" novalidate>
+        <h1>Despesas de Viagem</h1>
+        <p class="sub">Entre com o seu e-mail da empresa</p>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="username" placeholder="nome.sobrenome@grupomsa.com.br" required>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+        </div>
+        <button class="btn btn-primario btn-bloco" type="submit">Entrar</button>
+        <div class="msg msg-erro" id="erroLogin" hidden></div>
+        <p class="rodape"><a href="#" id="lnkEsqueci">Esqueci minha senha</a></p>
+      </form>
+
+      <!-- Esqueci a senha -->
+      <form id="fEsqueci" novalidate hidden>
+        <h1>Redefinir senha</h1>
+        <p class="sub">Informe o seu e-mail. Enviaremos um link para você criar uma nova senha.</p>
+        <div class="campo">
+          <label for="emailEsq">E-mail</label>
+          <input type="email" id="emailEsq" autocomplete="username" required>
+        </div>
+        <button class="btn btn-primario btn-bloco" type="submit">Enviar link</button>
+        <div class="msg" id="msgEsqueci" hidden></div>
+        <p class="rodape"><a href="#" id="lnkVoltar">Voltar ao login</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="/js/comum.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>

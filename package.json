@@ -1,0 +1,35 @@
+{
+  "name": "app-gastos-msa",
+  "version": "1.0.0",
+  "description": "Despesas de Viagem — Grupo MSA. Lê NFC-e/NF-e (foto ou PDF), classifica os gastos e gera o relatório de viagem.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "criar-admin": "node scripts/criar-admin.js",
+    "testar-nota": "node scripts/testar-nota.js",
+    "backup": "node scripts/backup.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.11.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^8.6.0",
+    "fast-xml-parser": "^5.11.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "jsqr": "^1.4.0",
+    "multer": "^2.1.1",
+    "nodemailer": "^10.0.16",
+    "openai": "^6.49.0",
+    "pdf-parse": "^2.4.5",
+    "qrcode-reader": "^1.0.4",
+    "sharp": "^0.35.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

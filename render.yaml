@@ -1,0 +1,39 @@
+# Blueprint do Render (New > Blueprint). Teste: plano gratuito, banco volátil (zera quando o serviço reinicia).
+# Para manter os dados: troque "plan: free" por um plano pago e descomente o bloco "disk".
+services:
+  - type: web
+    name: despesas-viagem-msa
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    # disk:
+    #   name: dados
+    #   mountPath: /data
+    #   sizeGB: 1
+    envVars:
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: TRUST_PROXY
+        value: "1"
+      - key: EMAIL_DOMINIOS
+        value: grupomsa.com.br
+      - key: LIMITE_LEITURAS_DIA
+        value: "50"
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-5-5
+      - key: IA_PROVEDOR
+        value: anthropic
+      - key: JWT_SECRET
+        generateValue: true
+      # Preencher no painel (sync: false = o valor nunca vai para o repositório):
+      - key: APP_URL
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_NOME
+        sync: false
+      - key: ADMIN_SENHA
+        sync: false
+      # Opcionais: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM, SMTP_SECURE, MOONSHOT_API_KEY, DEEPSEEK_API_KEY
